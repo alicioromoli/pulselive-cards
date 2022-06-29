@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <script type="module" src="js/main.js"></script>
+    <title>Card Players</title>
+  </head>
+  <body>
+    <article class="card">
+      <select name="player" id="player-select">
+        <option value="">Select a player...</option>
+      </select>
+      <div class="card__media"></div>
+      <div class="card__content">
+        <header class="card__header">
+          <h2 class="card__title"></h2>
+          <div class="card__position"></div>
+          <div class="card__current-team">
+            <div class="card__team-flag"></div>
+          </div>
+        </header>
+        <ul class="card__stats">
+          <li class="card__stat">
+            <span class="stat--name">Appearances</span>
+            <span class="stat--value" id="appearances"></span>
+          </li>
+          <li class="card__stat">
+            <span class="stat--name">Goals</span>
+            <span class="stat--value" id="goals"></span>
+          </li>
+          <li class="card__stat">
+            <span class="stat--name">Assists</span>
+            <span class="stat--value" id="assists"></span>
+          </li>
+          <li class="card__stat">
+            <span class="stat--name">Goals per match</span>
+            <span class="stat--value" id="goals-per-match"></span>
+          </li>
+          <li class="card__stat">
+            <span class="stat--name">Passes per minute</span>
+            <span class="stat--value" id="passes-per-minute"></span>
+          </li>
+        </ul>
+      </div>
+    </article>
+  </body>
+</html>

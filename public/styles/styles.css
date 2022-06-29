@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+body {
+  font: 100% 'Roboto', sans-serif;
+  color: white;
+  background-color: #343434;
+  margin: 0;
+}
+
+h2,
+h3 {
+  margin-block-start: unset;
+  margin-block-end: unset;
+}
+
+.card {
+  width: 300px;
+  height: 600px;
+  background-color: white;
+  overflow: hidden;
+}
+
+#player-select {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 14px 16px;
+  padding: 0 10px;
+  width: 268px;
+  background-image: url(../../assets/dropdown_icon.png);
+  background-repeat: no-repeat;
+  background-position: right 0.7em top 50%, 0 0;
+  background-size: 0.65em auto, 100%;
+  height: 40px;
+  background-color: #eaeaea;
+  border: hidden;
+  appearance: none;
+}
+
+.card__media {
+  height: 226px;
+}
+
+.card__img {
+  position: absolute;
+  top: 86px;
+  transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1);
+  left: 12px;
+  width: 164px;
+}
+
+.card__content {
+  background-color: #e90052;
+  height: inherit;
+  padding: 16px;
+}
+
+.card__current-team {
+  position: absolute;
+  top: 239px;
+  left: 176px;
+  background-color: white;
+  width: 110px;
+  height: 110px;
+  padding: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: grid;
+  transform: scale(0.63);
+}
+
+.card__team-flag {
+  background: url(../../assets/badges_sprite.png);
+  width: 100px;
+  height: 100px;
+  background-size: 1200%;
+  background-position: -500px -1000px;
+  margin: auto;
+}
+
+.card__title {
+  font-weight: 400;
+  font-size: 22px;
+  margin-top: -4px;
+  margin-bottom: 5px;
+}
+
+.card__position {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.card__stats {
+  margin: unset;
+  margin-top: 20px;
+  padding-inline-start: unset;
+  color: #38003c;
+  list-style: none;
+  width: 100%;
+}
+.card__stat {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 300;
+  background-color: #eaeaea;
+  margin: 2px;
+  padding: 10px;
+  box-shadow: 0px 0px 20px 1px #38003c54;
+}
+.stat--name {
+  font-weight: 500;
+}
